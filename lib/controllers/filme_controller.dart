@@ -7,4 +7,8 @@ class FilmeController {
   Future<List<Filme>> listarFilmes() async {
     return await _dbHelper.getFilmes();
   }
+
+  Future<void> adicionarFilme(Filme filme) async {
+    await _dbHelper.insertFilme(filme);
+  }
 }
