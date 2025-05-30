@@ -15,4 +15,8 @@ class FilmeController {
   Future<void> atualizarFilme(Filme filme) async {
     await _dbHelper.updateFilme(filme);
   }
+
+  Future<void> excluirFilme(int id) async {
+    await _dbHelper.deleteFilme(id);
+  }
 }
