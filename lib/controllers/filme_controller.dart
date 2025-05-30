@@ -11,4 +11,8 @@ class FilmeController {
   Future<void> adicionarFilme(Filme filme) async {
     await _dbHelper.insertFilme(filme);
   }
+
+  Future<void> atualizarFilme(Filme filme) async {
+    await _dbHelper.updateFilme(filme);
+  }
 }
